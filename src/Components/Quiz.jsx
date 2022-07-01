@@ -10,7 +10,7 @@ export default function Quiz() {
 			<Question questions={questions} />
 			<div className="flex items-center gap-6 self-center mt-3">
 				<p className="text-[#293264] font-bold ">
-					{sendedResponses && `Respostas corretas ${sendResponses.length}/5`}
+					{sendedResponses && `Correct answers ${sendResponses.length}/5`}
 				</p>
 				<button
 					className="px-6 py-3 bg-[#4D5B9E] rounded-lg w-fit self-center"
