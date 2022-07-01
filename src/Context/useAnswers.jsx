@@ -12,7 +12,7 @@ export function AnswersProvider({ children }) {
 	const [start, setStart] = useState(true);
 
 	async function getData() {
-		const res = await axios("https://opentdb.com/api.php?amount=10&category=15&type=multiple")
+		const res = await axios("https://opentdb.com/api.php?amount=5&category=15&type=multiple")
 		setQuestions(res.data.results)
 	}
 
