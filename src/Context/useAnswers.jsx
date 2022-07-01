@@ -12,8 +12,8 @@ export function AnswersProvider({ children }) {
 	const [start, setStart] = useState(true);
 
 	async function getData() {
-		let response = await axios("https://the-trivia-api.com/api/questions/");
-		setQuestions(response.data);
+		const res = await axios("https://opentdb.com/api.php?amount=10&category=15&type=multiple")
+		setQuestions(res.data.results)
 	}
 
 	useEffect(() => {

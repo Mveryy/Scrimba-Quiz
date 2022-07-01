@@ -29,3 +29,4 @@ input:checked + .incorrect {
 input:disabled + label {
 	cursor: initial;
 }
+

@@ -7,12 +7,15 @@ export default function Question() {
 
 	return questions.map((item, index) =>
 		index <= 4 ? (
-			<div key={item.id} className="px-[75px] text-[#293264]">
-				<h1 className="font-bold text-base w-full">{item.question}</h1>
-				<div className="flex items-center gap-4 mt-3 mb-0">
+			<div key={item.id} className="px-20 text-[#293264]">
+				 <h1 
+					dangerouslySetInnerHTML={{ __html: item.question}} 
+					className="font-bold text-base w-full sm:text-center">
+				 </h1>
+				<div className="flex items-center gap-4 mt-3 mb-0 sm:flex sm:flex-wrap sm:justify-center ">
 					<Answers
-						correctAnswer={item.correctAnswer}
-						incorrectAnswers={item.incorrectAnswers}
+						correct_answer={item.correct_answer}
+						incorrect_answers={item.incorrect_answers}
 						question={item.question}
 						id={nanoid}
 					/>

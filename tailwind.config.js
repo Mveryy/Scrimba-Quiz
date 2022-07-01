@@ -1,15 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["./src/**/*.{jsx,tsx}"],
+	content: ['./src/**/*.{jsx,tsx}'],
 	theme: {
+		screens: {
+			'sm': { 'max': '768px' }
+		},
 		extend: {
 			backgroundImage: {
-				startbg: "url(./start-bg.svg)",
+				startbg: 'url(./memphis-colorful.png)'
 			},
 			fontFamily: {
-				sans: "Karla, sans-serif",
-			},
-		},
+				sans: 'Karla, sans-serif'
+			}
+		}
 	},
-	plugins: [],
-};
+	plugins: []
+}
