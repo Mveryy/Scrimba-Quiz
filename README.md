@@ -16,6 +16,8 @@ Link: https://scrimba-quiz-pink.vercel.app/
 
 - React
 - TailwindCSS
+- Axios
+- ContextAPI
 
 ## Autores
 
